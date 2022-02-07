@@ -1,0 +1,9 @@
+
+
+web ---> http protocol
+http ---> stateless protocol (send request ---> server --> request received or not )
+
+
+request page for the first time ---> server respond with page (contain code start session())
+
+generate session_id ===> noha   ---> saving in the server , browser(cookie)
