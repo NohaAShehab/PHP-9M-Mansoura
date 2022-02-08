@@ -18,4 +18,4 @@
 
 
 <?php
-require 'strings.php'; ?>
+//require 'strings.php'; ?>

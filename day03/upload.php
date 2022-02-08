@@ -1,7 +1,13 @@
 <?php
 
+    ini_set('max_execution_time',3600);
     ini_set('display_errors', 1);
     ini_set('display_startup_errors', 1);
+
+    ini_set('upload_max_filesize','50M');
+   ini_set('post_max_size','50M');
+   ini_set('max_input_time',3000);
+
     error_reporting(E_ALL);
     var_dump($_REQUEST);
 
@@ -21,7 +27,8 @@
 
 
 try{
-    move_uploaded_file($tmp_name,"files/".$filename);
+    $res=move_uploaded_file($tmp_name,"files/".$filename);
+    if ($res){echo "uploaded";}
 } catch ( Exception $e) {
     echo $e;
 }

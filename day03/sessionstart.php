@@ -1,7 +1,7 @@
 <?php
 
 
-    session_start();
+    session_start(); # create new session_id -->
     echo "<h1> Hello World Session Started </h1>";
 
     # $_SESSION
